@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f4f4f9;
+        }
+        .id-card {
+            width: 90%;
+            max-width: 350px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+        .id-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Circular frame for the photo */
+            object-fit: cover; /* Ensures the image fits properly within the circle */
+        }
+        .id-card h2 {
+            margin: 10px 0;
+            font-size: 22px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .id-card h2 a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+        .id-card h2 a:hover {
+            color: #217dbb;
+        }
+        .id-card h2 img {
+            width: 20px;
+            height: 20px;
+        }
+        .id-card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #777;
+        }
+        .id-card .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .id-card .links a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .links .telegram { background: #0088cc; }
+        .links .facebook { background: #3b5998; }
+        .links .linkedin { background: #0077b5; }
+        .id-card .links a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        .phone {
+            margin: 15px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .phone:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+        .phone .emoji {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="id-card">
+        <!-- Replace 'store-logo.png' with your actual image file name -->
+        <img src="ceo.jpg" alt="Store Logo">
+        <h2>
+            <a href="https://t.me/yourtelegram" target="_blank">
+                Sorn Buntheng
+                <img src="https://img.icons8.com/fluency/48/000000/verified-badge.png" alt="Verified">
+            </a>
+        </h2>
+        <p>Chief Executive Officer 👨</p>
+        <p class="phone">
+            📞 Call us: +1289 634 3688
+            <span class="emoji">📲</span>
+        </p>
+        <div class="links">
+            <a href="https://t.me/yourtelegram" class="telegram" target="_blank">
+                Telegram
+            </a>
+            <a href="https://facebook.com/buntheng.sorn" class="facebook" target="_blank">
+                Facebook
+            </a>
+            <a href="https://linkedin.com/in/yourlinkedin" class="linkedin" target="_blank">
+                LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <script>
+        console.log("Mobile-friendly ID card with circular photo frame loaded successfully!");
+    </script>
+</body>
+</html>
